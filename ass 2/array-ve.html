@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   let list =[1, 2, 3, 4, 5, 1, 3];
+    function countInArray(array, Elem){
+    let count=0;
+
+    for(let i=0; i<array.length; i++){
+      if(array[i]===Elem){
+      count++;}
+    }
+    return count===0?-1:count
+    
+}
+document.write (countInArray(list, 0));
+</script> 
+</body>
+</html> 

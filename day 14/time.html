@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time</title>
+    <style>
+    .container{
+    text-align: center;
+    }
+    #time{
+    font-size: 50px;
+    color: blueviolet;
+    }
+    </style>
+</head>
+<body>
+ <div class="container">
+     <h1 id="time">myClock!</h1>
+ </div>
+ <script>
+//set time
+/* function myName(fname, lname)
+{console.log("my name is "+fname+"s"+lname)};
+//myName('naveen', 'kumar')
+//setTimeout(myName,6000,'naveen','kumar');
+timeInterval=setTimeout(myName,1000,'naveen','kumar');
+//console.log(timeInterval)
+//clearTimeout(timeInterval)
+
+//setInterval(myName,1000,'naveen','kumar')
+//setTimeout(myName(),2000, 'naveen', 'kumar')
+clearInterval(timeInterval)
+ */
+function myClock ()
+/* {let time=new Date();
+console.log(time);
+document.querySelector('#time').innerHTML=time;
+} */
+
+{let today=new Date();
+let time=today.getHours()+':'+today.getMinutes()+':'+today.getSeconds();
+
+let date=today.getDate()+':'+(today.getMonth()+1)+':'+today.getFullYear();
+
+let dateTime=`my date ${date} and the clock says ${time}`
+console.log(time);
+const naveen=document.querySelector('#time')
+naveen.innerHTML=dateTime;
+}
+//myClock()
+setInterval(myClock,1000)
+ </script>  
+</body>
+</html>
